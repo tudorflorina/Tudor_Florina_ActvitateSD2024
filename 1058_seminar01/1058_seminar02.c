@@ -62,7 +62,6 @@ struct Calculator* copiazaCalculatoareCuMultePorturi(struct Calculator* calculat
 }
 
 //de cautat pretul unui vector in vector
-//incercare pentru a vedea daca se face update
 
 void dezalocare(struct Calculator** vector, int* dim) {
 	for (int i = 0; i < (*dim); i++) {
