@@ -21,6 +21,8 @@ void afisareCalculator(struct Calculator calculator) {
 	printf("Calculatorul cu seria %s, costa %5.2f si are %d porturi\n", calculator.serie, calculator.pret, calculator.numarPorturi);
 }
 
+//
+
 void afisareVectorCalculatoare(struct Calculator* vector, int nrCalculatoare) {
 	if (nrCalculatoare > 0 && vector != NULL) {
 		for (int i = 0; i < nrCalculatoare; i++) {
