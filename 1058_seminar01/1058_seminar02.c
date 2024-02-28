@@ -21,7 +21,6 @@ void afisareCalculator(struct Calculator calculator) {
 	printf("Calculatorul cu seria %s, costa %5.2f si are %d porturi\n", calculator.serie, calculator.pret, calculator.numarPorturi);
 }
 
-//
 
 void afisareVectorCalculatoare(struct Calculator* vector, int nrCalculatoare) {
 	if (nrCalculatoare > 0 && vector != NULL) {
@@ -63,6 +62,7 @@ struct Calculator* copiazaCalculatoareCuMultePorturi(struct Calculator* calculat
 }
 
 //de cautat pretul unui vector in vector
+//incercare pentru a vedea daca se face update
 
 void dezalocare(struct Calculator** vector, int* dim) {
 	for (int i = 0; i < (*dim); i++) {
