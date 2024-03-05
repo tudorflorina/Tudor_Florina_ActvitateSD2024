@@ -69,12 +69,21 @@ void AfisareVectorAeroporturi(struct Aeroport* aeroporturi, int dimensiune) {
 void dezalocareVector(struct Aeroport** aeroporturi, int* dim) {
 	for (int i = 0; i < (*dim); i++)
 	{
-		free((*aeroporturi[i]).nume);
+		free((*aeroporturi)[i].nume);
 		free(aeroporturi[i]);
 	}
 	free(aeroporturi);
 	(*aeroporturi) = NULL;
 	(*dim) = 0;
+}
+
+//sa returneze un anumit aeroport dupa id
+
+struct Aeroport idCautat(struct Aeroport* aeroporturi, int dim, int id) {
+	for (int i = 0; i < dim; i++) {
+		if (aeroporturi[i].id == id)
+			return aeroporturi[i];
+	}
 }
 
 
@@ -84,4 +93,5 @@ void main() {
 	struct Aeroport* aeroporturi = NULL;
 	aeroporturi = citireFisier("Aeroporturi.txt", &dimensiune);
 	AfisareVectorAeroporturi(aeroporturi, dimensiune);
+	dezalocareVector(&aeroporturi, &dimensiune);
 }
