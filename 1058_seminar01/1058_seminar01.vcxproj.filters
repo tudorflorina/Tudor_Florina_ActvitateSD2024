@@ -21,5 +21,13 @@
     <ClCompile Include="1058_seminar02.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="1058_seminar03.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Aeroporturi.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>
