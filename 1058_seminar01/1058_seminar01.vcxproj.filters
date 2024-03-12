@@ -24,6 +24,18 @@
     <ClCompile Include="1058_seminar03.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="IntelegerePointeri.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ListaSimpla.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ListaDubla.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="1058_seminar04.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Aeroporturi.txt">
