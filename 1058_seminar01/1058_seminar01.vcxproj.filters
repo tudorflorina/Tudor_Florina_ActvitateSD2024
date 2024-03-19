@@ -36,7 +36,7 @@
     <ClCompile Include="1058_seminar04.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="1058_seminar05.cpp">
+    <ClCompile Include="1058_seminar05.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
