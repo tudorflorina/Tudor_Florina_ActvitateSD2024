@@ -131,6 +131,7 @@
     <ClCompile Include="1058_seminar02.c" />
     <ClCompile Include="1058_seminar03.c" />
     <ClCompile Include="1058_seminar04.c" />
+    <ClCompile Include="1058_seminar05.cpp" />
     <ClCompile Include="IntelegerePointeri.cpp" />
     <ClCompile Include="ListaDubla.c" />
     <ClCompile Include="ListaSimpla.c" />

@@ -36,6 +36,9 @@
     <ClCompile Include="1058_seminar04.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="1058_seminar05.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Aeroporturi.txt">
