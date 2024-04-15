@@ -1,0 +1,4 @@
+3
+Florina 10 5.67
+Denis 12 9.89
+Andrei 34 7.89

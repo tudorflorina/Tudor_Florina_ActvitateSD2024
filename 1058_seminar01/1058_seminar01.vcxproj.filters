@@ -27,9 +27,6 @@
     <ClCompile Include="IntelegerePointeri.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ListaSimpla.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="ListaDubla.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -48,9 +45,30 @@
     <ClCompile Include="1058_seminar08.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="RecapitulareTestListaSimpla.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RecapitulareListaDubla.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RecapitulareHashTable.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RecapitulareHashTable1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Aeroporturi.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="Date.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="Baze.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="Comenzi.txt">
       <Filter>Resource Files</Filter>
     </Text>
   </ItemGroup>

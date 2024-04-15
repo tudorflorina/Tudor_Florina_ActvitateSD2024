@@ -137,10 +137,16 @@
     <ClCompile Include="1058_seminar08.c" />
     <ClCompile Include="IntelegerePointeri.cpp" />
     <ClCompile Include="ListaDubla.c" />
-    <ClCompile Include="ListaSimpla.c" />
+    <ClCompile Include="RecapitulareHashTable.c" />
+    <ClCompile Include="RecapitulareHashTable1.c" />
+    <ClCompile Include="RecapitulareListaDubla.c" />
+    <ClCompile Include="RecapitulareTestListaSimpla.c" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Aeroporturi.txt" />
+    <Text Include="Baze.txt" />
+    <Text Include="Comenzi.txt" />
+    <Text Include="Date.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
