@@ -135,6 +135,7 @@
     <ClCompile Include="1058_seminar06.c" />
     <ClCompile Include="1058_seminar07.c" />
     <ClCompile Include="1058_seminar08.c" />
+    <ClCompile Include="1058_seminar10.c" />
     <ClCompile Include="IntelegerePointeri.cpp" />
     <ClCompile Include="ListaDubla.c" />
     <ClCompile Include="RecapitulareHashTable.c" />
@@ -147,6 +148,7 @@
     <Text Include="Baze.txt" />
     <Text Include="Comenzi.txt" />
     <Text Include="Date.txt" />
+    <Text Include="Elevi.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

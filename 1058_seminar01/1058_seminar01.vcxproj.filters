@@ -57,6 +57,9 @@
     <ClCompile Include="RecapitulareHashTable1.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="1058_seminar10.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Aeroporturi.txt">
@@ -69,6 +72,9 @@
       <Filter>Resource Files</Filter>
     </Text>
     <Text Include="Comenzi.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="Elevi.txt">
       <Filter>Resource Files</Filter>
     </Text>
   </ItemGroup>
