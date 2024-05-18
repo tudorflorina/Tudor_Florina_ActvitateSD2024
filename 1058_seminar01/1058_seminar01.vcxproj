@@ -136,6 +136,7 @@
     <ClCompile Include="1058_seminar07.c" />
     <ClCompile Include="1058_seminar08.c" />
     <ClCompile Include="1058_seminar10.c" />
+    <ClCompile Include="1058_seminar11.c" />
     <ClCompile Include="IntelegerePointeri.cpp" />
     <ClCompile Include="ListaDubla.c" />
     <ClCompile Include="RecapitulareHashTable.c" />

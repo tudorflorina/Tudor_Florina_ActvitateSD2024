@@ -78,6 +78,9 @@ void afisareArbore(Nod* arbore) {
 	afisareArbore(arbore->stanga);
 }
 
+//sumele le am facut la tabla 
+//de completat
+
 void main() {
 	Nod* arbore = citireFisier("Elevi.txt");
 	afisareArbore(arbore);
