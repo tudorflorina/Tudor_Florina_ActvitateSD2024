@@ -78,7 +78,87 @@ void inserareMuchie(NodPrincipal* graf, int serieStart, int serieStop) {
 	}
 }
 
+#pragma region Coada
+//definim regiune coada
+typedef struct NodCoada NodCoada;
 
+struct NodCoada {
+	int serie;
+	NodCoada* next;
+};
+//daca facem inserare la un capat extragerea o facem la celalalt capat
+void inserareCoada(NodCoada** cap, int serie) {
+	NodCoada* nou = (NodCoada*)malloc(sizeof(NodCoada));
+	nou->serie = serie;
+	nou->next = NULL;
+	if (*cap) {
+		NodCoada* aux = *cap;
+		while (aux->next != NULL) {
+			aux = aux->next;
+		}
+		aux->next = nou;
+	}
+	else {
+		*cap = nou;
+	}
+}
+
+int extragereCoada(NodCoada** cap) {
+	//este extrax cap data exista coada
+	if (*cap) {
+		int rezultat = (*cap)->serie;
+		NodCoada* aux = *cap;
+		*cap = aux->next;
+		free(aux);
+		return rezultat;
+	}
+	else return -1;
+}
+#pragma endregion
+
+int getNrNoduri(NodPrincipal* graf) {
+	int nr = 0;
+	while (graf) {
+		nr++;
+		graf = graf->next;
+	}
+	return nr;
+}
+
+void afisareMetrou(Metrou m) {
+	printf("%d, nr statii: %d, magistrala: %s\n", m.serie, m.nrStatie, m.magistrala);
+}
+
+//functie de afisare(parcurgere in latime)
+void afisarePrinParcurgereInLatime(NodPrincipal* graf, int serie) {
+	NodCoada* coada = NULL;
+	int nrNoduri = getNrNoduri(graf);
+	char* vizitate = (char*)malloc(nrNoduri);
+	for (int i = 0; i < nrNoduri; i++) {
+		vizitate[i] = 0;
+	}
+	inserareCoada(&coada, serie);
+	vizitate[serie] = 1;
+	while (coada) {
+		int serieNoua = extragereCoada(&coada);
+		NodPrincipal* nou = cautaNodDupaSerie(graf, serieNoua);
+		afisareMetrou(nou->info);
+		NodSecundar* temp = nou->vecini;
+		while (temp) {
+			if (vizitate[temp->nod->info.serie] == 0) {
+				vizitate[temp->nod->info.serie] = 1;
+				inserareCoada(&coada, temp->nod->info.serie);
+			}
+			temp = temp->next;
+		}
+	}
+	if (vizitate) {
+		free(vizitate);
+	}
+}
+
+
+//functia de dezalocare
 
 void main() {
 	NodPrincipal* graf = NULL;
@@ -89,10 +169,9 @@ void main() {
 	inserarePrincipala(&graf, creareMetrou(0, 9, "M6"));
 
 	inserareMuchie(graf, 0, 1);
-	inserareMuchie(graf, 1, 2);
 	inserareMuchie(graf, 1, 3);
+	inserareMuchie(graf, 1, 2);
 	inserareMuchie(graf, 1, 4);
 	inserareMuchie(graf, 2, 3);
-
-
+	afisarePrinParcurgereInLatime(graf, 0);
 }
